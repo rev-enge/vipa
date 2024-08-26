@@ -23,10 +23,22 @@ The bus is actively buffered inside the SLIO modules so each module regenerates
 
 # Table of contents
 
-Modules that have been investigated:
+## Module schematics
+
+These are the modules which were investigated and partly reverse engineered:
 
 * SM021-1BL00 rev 3 => [Digital input DI8xDC24V](sm021-1bl00-r3/readme.md)
 * SM022-1BF00 rev 3 => [Digital output DO8xDC 24V0,5A](sm022-1bf00-r3/readme.md)
 * SM031-1BD40 rev 1 => [Analog input AI4x12Bit 0/4...20mA](sm031-1bd40-r1/readme.md)
 * SM031-1BD40 rev 3 => [Analog input AI4x12Bit 0/4...20mA](sm031-1bd40-r3/readme.md)
 * SM032-1BD40 rev 1 => [Analog output AO 4x12Bit, I](sm032-1bd40-r1/readme.md)
+
+## Datasheets
+
+Some (latest) datasheets are hard to find, so a copy of them are placed here:
+
+* SNAP+ [rev 1.17](datasheets/snap-datasheet.pdf)
+
+Especially the SNAP+ datasheet contains a lot of information and the most parts
+ of the bus side of the slio module(s).
+ 
