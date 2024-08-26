@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "private")(type "KiCad")(uri "D:/reverse-engineering/vipa/shared/private.kicad_sym")(options "")(descr ""))
+)
