@@ -27,3 +27,6 @@ This board has 4 inputs, 0/4...20 mA analog, 12 bits resolution.
 # Utilities used to create the drawings
 
 The schematic diagram is made with KiCad 6.0.11
+
+The board component drawing is made with Microsoft Visio 2003 but can be opened
+ with LibreOffice Draw.
