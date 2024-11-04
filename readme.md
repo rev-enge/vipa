@@ -14,7 +14,7 @@ Each slot contains a socket with plugin module.
 For additional 24V bus power an intermediate module may be placed between the
  modules, (which occupy no slot in its chain).
 
-The modules have a 7-pin bus interconnect 2 pin power interconnect and an 8 pin
+The modules have a 7-pin bus interconnect, 2 pin power interconnect and an 8 pin
  I/O connnection towards the outside world.
 
 The bus is actively buffered inside the SLIO modules so each module regenerates
@@ -23,9 +23,9 @@ The bus is actively buffered inside the SLIO modules so each module regenerates
 
 The older revisions (rev 1) have a Xilinx Spartan XC3S500E FPGA chip as a bus
  interface chip. This is a CPG132 (BGA) package which probably contains similar
- functionality as the SNAP+ chip. I have no idea if the companion CPU has
- different firmware with respect to the rev 3 modules. But I assume they are
- different.
+ functionality as the SNAP+ chip. I have no idea if the companion CPU (if one)
+ has different firmware with respect to the rev 3 modules. But I assume they
+ are different.
  
 The newer revisions (rev 3) of the modules have a SNAP+ bus interface chip.
  This is a PQFP48 chip and much easier to reverse engineer because the pins can
@@ -37,7 +37,7 @@ The newer revisions (rev 3) of the modules have a SNAP+ bus interface chip.
 
 These are the modules which were investigated and partly reverse engineered:
 
-* SM021-1BL00 rev 3 => [Digital input DI8xDC24V](sm021-1bl00-r3/readme.md) TODO
+* SM021-1BF00 rev 3 => [Digital input DI8xDC24V](sm021-1bf00-r3/readme.md) Pending work
 * SM022-1BF00 rev 3 => [Digital output DO8xDC 24V0,5A](sm022-1bf00-r3/readme.md) TODO
 * SM031-1BD40 rev 1 => [Analog input AI4x12Bit 0/4...20mA](sm031-1bd40-r1/readme.md) Only parts will be reverse engineered.
 * SM031-1BD40 rev 3 => [Analog input AI4x12Bit 0/4...20mA](sm031-1bd40-r3/readme.md) Pending work
