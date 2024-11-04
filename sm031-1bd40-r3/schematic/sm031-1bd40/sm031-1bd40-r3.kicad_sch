@@ -5,11 +5,13 @@
   (paper "A4")
 
   (title_block
-    (title "SM031-1BD040 Analog AI4x12Bit 0/4...20mA")
-    (date "2024-10-21")
+    (title "Vipa SLIO SM031-1BD040 Analog AI4x12Bit 0/4...20mA")
+    (date "2024-11-05")
     (rev "rev 3")
     (company "Reverse engineered, design copyright VIPA GmbH")
-    (comment 1 "SLIO Main CPU + insulation + secondary power ")
+    (comment 1 "SLIO Bus interface + insulation + secondary power ")
+    (comment 2 "Accuracy of components and wiring not guaranteed!")
+    (comment 3 "For repair purposes only!")
   )
 
   (lib_symbols

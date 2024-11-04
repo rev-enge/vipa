@@ -5,11 +5,12 @@
   (paper "A4")
 
   (title_block
-    (title "SM031-1BD040 Analog AI4x12Bit 0/4...20mA")
-    (date "2024-10-21")
+    (title "Vipa SLIO SM031-1BD040 Analog AI4x12Bit 0/4...20mA")
+    (date "2024-10-31")
     (rev "rev 3")
     (company "Reverse engineered, design copyright VIPA GmbH")
     (comment 1 "SLIO Main CPU + insulation + secondary power ")
+    (comment 3 "For repair purposes only!")
   )
 
   (lib_symbols
@@ -6035,7 +6036,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Case" "1210" (id 4) (at 180.594 31.75 0))
-    (property "Type" "12105C106K4T2A" (id 5) (at 176.784 39.37 0))
+    (property "Type" "12105C106KAT2A" (id 5) (at 176.784 39.37 0))
     (pin "1" (uuid a2e15b52-2bf3-4310-bef2-2a613f75a978))
     (pin "2" (uuid e4e8e035-8467-4997-b2fa-2bf54d1b676c))
   )
