@@ -6,7 +6,7 @@
 
   (title_block
     (title "Vipa SLIO SM021-1BF00 DI8xDC24V DC")
-    (date "2024-11-05")
+    (date "2024-12-10")
     (rev "3")
     (company "Reverse engineered, design copyright VIPA GmbH")
     (comment 1 "Input conditioning.")
@@ -1374,7 +1374,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 28d12a43-8e63-422a-b070-1a5065950cf1)
   )
-  (text "GN" (at 142.24 72.39 0)
+  (text "GN" (at 141.478 71.882 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2a6bbb13-47a2-451c-b99f-b3ae55f87487)
   )
@@ -1907,7 +1907,7 @@
   (symbol (lib_id "Device:LED") (at 138.43 67.31 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000667c3436)
-    (property "Reference" "D5" (id 0) (at 141.4272 66.3194 90)
+    (property "Reference" "LD?" (id 0) (at 141.4272 66.3194 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED" (id 1) (at 141.4272 68.6308 90)

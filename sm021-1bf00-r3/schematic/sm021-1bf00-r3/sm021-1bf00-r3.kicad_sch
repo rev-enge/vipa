@@ -6,10 +6,10 @@
 
   (title_block
     (title "Vipa SLIO SM021-1BF00 DI8xDC24V DC")
-    (date "2024-11-05")
+    (date "2024-12-10")
     (rev "3")
     (company "Reverse engineered, design copyright VIPA GmbH")
-    (comment 1 "SLIO Bus interface")
+    (comment 1 "SLIO Bus interface logic and powersupplies")
     (comment 2 "Accuracy of components and wiring not guaranteed!")
     (comment 3 "For repair purposes only!")
   )
@@ -2676,7 +2676,7 @@
   (symbol (lib_id "private:slio-bus") (at 248.92 26.162 0) (unit 2)
     (in_bom no) (on_board yes)
     (uuid 476ad1c7-ff0b-4c8e-89e9-9be64c32b8fc)
-    (property "Reference" "J?" (id 0) (at 247.142 15.24 0)
+    (property "Reference" "J1" (id 0) (at 247.142 15.24 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "slio-bus" (id 1) (at 244.602 36.576 0)
@@ -3114,7 +3114,7 @@
   (symbol (lib_id "Device:LED") (at 182.626 115.062 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 950dc98d-ae8c-4d73-b947-799c862af560)
-    (property "Reference" "D?" (id 0) (at 182.626 112.268 0))
+    (property "Reference" "LD1" (id 0) (at 182.626 112.268 0))
     (property "Value" "GN" (id 1) (at 182.626 117.856 0))
     (property "Footprint" "" (id 2) (at 182.626 115.062 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3636,7 +3636,7 @@
   (symbol (lib_id "private:slio-bus") (at 29.718 26.162 0) (unit 1)
     (in_bom no) (on_board yes)
     (uuid f154c344-6338-4437-b24f-8f1ff65fcf4d)
-    (property "Reference" "J?" (id 0) (at 29.718 15.494 0))
+    (property "Reference" "J1" (id 0) (at 29.718 15.494 0))
     (property "Value" "slio-bus" (id 1) (at 29.718 36.068 0))
     (property "Footprint" "" (id 2) (at 26.543 26.162 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3678,7 +3678,7 @@
   (symbol (lib_id "Device:LED") (at 182.626 122.682 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid f1904e9f-55b8-4eee-a5bf-f25bb642e2bc)
-    (property "Reference" "D?" (id 0) (at 182.626 119.888 0))
+    (property "Reference" "LD2" (id 0) (at 182.626 119.888 0))
     (property "Value" "RD" (id 1) (at 182.626 125.476 0))
     (property "Footprint" "" (id 2) (at 182.626 122.682 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3937,20 +3937,11 @@
     (path "/00000000-0000-0000-0000-00006650b491/00000000-0000-0000-0000-0000667b6894"
       (reference "C?") (unit 1) (value "C") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006650b491/00000000-0000-0000-0000-0000667c3436"
-      (reference "D5") (unit 1) (value "LED") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00006650b491/00000000-0000-0000-0000-0000664efdf1"
       (reference "D?") (unit 1) (value "BZX384-B10") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006650b491/00000000-0000-0000-0000-0000667b75f2"
       (reference "D?") (unit 1) (value "LL4148") (footprint "Diode_SMD:D_MiniMELF")
-    )
-    (path "/950dc98d-ae8c-4d73-b947-799c862af560"
-      (reference "D?") (unit 1) (value "GN") (footprint "")
-    )
-    (path "/f1904e9f-55b8-4eee-a5bf-f25bb642e2bc"
-      (reference "D?") (unit 1) (value "RD") (footprint "")
     )
     (path "/ab31a760-1627-4dd8-9516-a4bae4c4c070"
       (reference "FB1") (unit 1) (value "BLM15AG221SN1") (footprint "")
@@ -3958,14 +3949,23 @@
     (path "/d761af17-b5cc-4f84-ad64-c5f3115d0e9f"
       (reference "FB2") (unit 1) (value "BLM15AG221SN1") (footprint "")
     )
+    (path "/f154c344-6338-4437-b24f-8f1ff65fcf4d"
+      (reference "J1") (unit 1) (value "slio-bus") (footprint "")
+    )
+    (path "/476ad1c7-ff0b-4c8e-89e9-9be64c32b8fc"
+      (reference "J1") (unit 2) (value "slio-bus") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00006650b491/00000000-0000-0000-0000-0000667bc36a"
       (reference "J3") (unit 1) (value "CARDEDGE-11") (footprint "")
     )
-    (path "/f154c344-6338-4437-b24f-8f1ff65fcf4d"
-      (reference "J?") (unit 1) (value "slio-bus") (footprint "")
+    (path "/950dc98d-ae8c-4d73-b947-799c862af560"
+      (reference "LD1") (unit 1) (value "GN") (footprint "")
     )
-    (path "/476ad1c7-ff0b-4c8e-89e9-9be64c32b8fc"
-      (reference "J?") (unit 2) (value "slio-bus") (footprint "")
+    (path "/f1904e9f-55b8-4eee-a5bf-f25bb642e2bc"
+      (reference "LD2") (unit 1) (value "RD") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00006650b491/00000000-0000-0000-0000-0000667c3436"
+      (reference "LD?") (unit 1) (value "LED") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006650b491/00000000-0000-0000-0000-0000667b8fa7"
       (reference "O1") (unit 1) (value "L217") (footprint "Package_DIP:DIP-4_W7.62mm")
